@@ -1,5 +1,3 @@
-
-
 // SAFE-GUARD: 
 // It is good practice to apply safe-guards to header files
 // Safe-guard's ensures only 1 copy of the header file is used in the project build
@@ -12,7 +10,6 @@
 //////////////////////////////////////
 
 // Display formatting options (Provided to student)
-// !!! DO NOT MODIFY THESE MACRO'S !!!
 #define FMT_FORM 1
 #define FMT_TABLE 2
 
@@ -21,8 +18,6 @@
 #define PHONE_DESC_LEN 4
 #define PHONE_LEN 10
 
-// MS#3 Additional macro's:
-// ToDo:
 #define start 10
 #define end 14
 
@@ -48,21 +43,18 @@ struct Patient
 // ------------------- MS#3 -------------------
 
 // Data type: Time
-// ToDo:
 struct Time
 {
     int hour, min;
 };
 
 // Data type: Date
-// ToDo:
 struct Date
 {
     int year, month, day;
 };
 
 // Data type: Appointment
-// ToDo:
 struct Appointment
 {
     int Patientnumber;
@@ -71,7 +63,6 @@ struct Appointment
 };
 
 // ClinicData type: Provided to student
-// !!! DO NOT MODIFY THIS DATA TYPE !!!
 struct ClinicData
 {
     struct Patient* patients;
@@ -134,20 +125,16 @@ void removePatient(struct Patient patient[], int max);
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // View ALL scheduled appointments
-// Todo:
 void viewAllAppointments(const struct ClinicData* clinicdata);
 
 // View appointment schedule for the user input date
-// Todo:
 void viewAppointmentSchedule(const struct ClinicData* clinicdata);
 
 // Add an appointment record to the appointment array
-// Todo:
 void addAppointment(struct Appointment* appointments, int maxAppointments,
     struct Patient* patients, int maxPatient);
 
 // Remove an appointment record from the appointment array
-// Todo:
 void removeAppointment(struct Appointment* appointments, int maxAppointments,
     struct Patient* patients, int maxPatient);
 
